@@ -320,13 +320,13 @@ fi
 # abort "Don't run this as root!"
 #elif [[ -d "$HOMEBREW_PREFIX" && ! -x "$HOMEBREW_PREFIX" ]]; then
 #  abort "$(cat <<EOABORT
-The Homebrew prefix, ${HOMEBREW_PREFIX}, exists but is not searchable. If this is
-not intentional, please restore the default permissions and try running the
-installer again:
-    sudo chmod 775 ${HOMEBREW_PREFIX}
-EOABORT
-)"
-fi
+#The Homebrew prefix, ${HOMEBREW_PREFIX}, exists but is not searchable. If this is
+#not intentional, please restore the default permissions and try running the
+#installer again:
+#    sudo chmod 775 ${HOMEBREW_PREFIX}
+#EOABORT
+#)"
+#fi
 
 if [[ -z "${HOMEBREW_ON_LINUX-}" ]]; then
   if version_lt "$macos_version" "10.7"; then
