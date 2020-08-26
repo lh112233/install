@@ -316,10 +316,10 @@ else
   HOMEBREW_REPOSITORY="${HOMEBREW_PREFIX}/Homebrew"
 fi
 
-if [[ "$UID" == "0" ]]; then
-  abort "Don't run this as root!"
-elif [[ -d "$HOMEBREW_PREFIX" && ! -x "$HOMEBREW_PREFIX" ]]; then
-  abort "$(cat <<EOABORT
+#if [[ "$UID" == "0" ]]; then
+# abort "Don't run this as root!"
+#elif [[ -d "$HOMEBREW_PREFIX" && ! -x "$HOMEBREW_PREFIX" ]]; then
+#  abort "$(cat <<EOABORT
 The Homebrew prefix, ${HOMEBREW_PREFIX}, exists but is not searchable. If this is
 not intentional, please restore the default permissions and try running the
 installer again:
